@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<jaxb-intros xmlns="http://www.jboss.org/xsd/jaxb/intros" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.jboss.org/xsd/jaxb/intros http://anonsvn.jboss.org/repos/jbossws/projects/jaxbintros/trunk/src/main/resources/jaxb-intros.xsd">
+
+    <Class name="org.jboss.seam.mail.core.EmailMessage">
+        <XmlAccessorType value="FIELD"/>
+        <XmlRootElement/>
+        <Field name="attachments">
+            <XmlElement type="org.jboss.seam.mail.attachments.BaseAttachment"/>
+            <XmlElementWrapper/>
+        </Field>
+        <Field name="headers">
+            <XmlElementWrapper/>
+            <XmlJavaTypeAdapter value="pl.com.it_crowd.seam3.mailman.jaxb.HeaderAdapter"/>
+        </Field>
+    </Class>
+
+    <!--This declaration is needed so that contentId field gets marshalled/unmarshalled; it doesn't have setter-->
+    <Class name="org.jboss.seam.mail.attachments.BaseAttachment">
+        <XmlAccessorType value="FIELD"/>
+        <Field name="headers">
+            <XmlElementWrapper/>
+            <XmlJavaTypeAdapter value="pl.com.it_crowd.seam3.mailman.jaxb.HeaderAdapter"/>
+        </Field>
+    </Class>
+
+</jaxb-intros>
