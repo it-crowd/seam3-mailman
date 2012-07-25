@@ -3,6 +3,7 @@ package pl.com.it_crowd.seam3.mailman;
 import org.jboss.seam.jms.MessageManager;
 import org.jboss.seam.mail.api.MailMessage;
 import org.jboss.seam.mail.core.EmailMessage;
+import org.jboss.solder.core.Requires;
 import pl.com.it_crowd.seam3.mailman.jaxb.EmailMessageMarshaller;
 
 import javax.enterprise.inject.Instance;
@@ -12,6 +13,7 @@ import javax.jms.Message;
 import javax.jms.TextMessage;
 import javax.xml.bind.JAXBException;
 
+@Requires({"org.jboss.seam.jms.MessageManager", "org.jboss.seam.mail.api.MailMessage"})
 public class Mailman {
 // ------------------------------ FIELDS ------------------------------
 
