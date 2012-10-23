@@ -1,4 +1,4 @@
-package pl.com.it_crowd.seam3.mailman;
+package pl.itcrowd.seam3.mailman;
 
 import junit.framework.Assert;
 import org.jboss.seam.mail.attachments.BaseAttachment;
@@ -7,7 +7,7 @@ import org.jboss.seam.mail.core.EmailMessage;
 import org.jboss.seam.mail.core.Header;
 import org.jboss.seam.mail.core.enumerations.ContentDisposition;
 import org.junit.Test;
-import pl.com.it_crowd.seam3.mailman.jaxb.EmailMessageMarshaller;
+import pl.itcrowd.seam3.mailman.jaxb.EmailMessageMarshaller;
 
 import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;

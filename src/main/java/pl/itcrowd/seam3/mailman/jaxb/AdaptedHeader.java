@@ -1,4 +1,4 @@
-package pl.com.it_crowd.seam3.mailman.jaxb;
+package pl.itcrowd.seam3.mailman.jaxb;
 
 public class AdaptedHeader {
 // ------------------------------ FIELDS ------------------------------

@@ -14,7 +14,7 @@ Just include the seam3-mailman.jar into your classpath and configure destination
         <enterprise-beans>
             <message-driven>
                 <ejb-name>JMSMailListener</ejb-name>
-                <ejb-class>pl.com.it_crowd.seam3.mailman.JMSMailListener</ejb-class>
+                <ejb-class>pl.itcrowd.seam3.mailman.JMSMailListener</ejb-class>
                 <activation-config>
                     <activation-config-property>
                         <activation-config-property-name>destination</activation-config-property-name>
@@ -41,7 +41,7 @@ Suggested API usage:
     import org.jboss.seam.mail.core.EmailContact;
     import org.jboss.seam.mail.templating.freemarker.FreeMarkerTemplate;
     import org.jboss.solder.resourceLoader.ResourceProvider;
-    import pl.com.it_crowd.seam3.mailman.Mailman;
+    import pl.itcrowd.seam3.mailman.Mailman;
 
     public class YourMailman {
 

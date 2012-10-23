@@ -1,4 +1,4 @@
-package pl.com.it_crowd.seam3.mailman.jaxb;
+package pl.itcrowd.seam3.mailman.jaxb;
 
 import com.sun.xml.bind.api.JAXBRIContext;
 import org.jboss.jaxb.intros.IntroductionsAnnotationReader;

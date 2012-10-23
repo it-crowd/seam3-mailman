@@ -1,10 +1,10 @@
-package pl.com.it_crowd.seam3.mailman;
+package pl.itcrowd.seam3.mailman;
 
 import org.jboss.seam.jms.MessageManager;
 import org.jboss.seam.mail.api.MailMessage;
 import org.jboss.seam.mail.core.EmailMessage;
 import org.jboss.solder.core.Requires;
-import pl.com.it_crowd.seam3.mailman.jaxb.EmailMessageMarshaller;
+import pl.itcrowd.seam3.mailman.jaxb.EmailMessageMarshaller;
 
 import javax.enterprise.inject.Instance;
 import javax.inject.Inject;

@@ -11,7 +11,7 @@
         </Field>
         <Field name="headers">
             <XmlElementWrapper/>
-            <XmlJavaTypeAdapter value="pl.com.it_crowd.seam3.mailman.jaxb.HeaderAdapter"/>
+            <XmlJavaTypeAdapter value="pl.itcrowd.seam3.mailman.jaxb.HeaderAdapter"/>
         </Field>
     </Class>
 
@@ -20,7 +20,7 @@
         <XmlAccessorType value="FIELD"/>
         <Field name="headers">
             <XmlElementWrapper/>
-            <XmlJavaTypeAdapter value="pl.com.it_crowd.seam3.mailman.jaxb.HeaderAdapter"/>
+            <XmlJavaTypeAdapter value="pl.itcrowd.seam3.mailman.jaxb.HeaderAdapter"/>
         </Field>
     </Class>
 

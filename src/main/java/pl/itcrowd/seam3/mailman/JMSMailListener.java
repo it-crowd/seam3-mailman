@@ -1,4 +1,4 @@
-package pl.com.it_crowd.seam3.mailman;
+package pl.itcrowd.seam3.mailman;
 
 import org.jboss.solder.core.Requires;
 import org.jboss.solder.logging.Logger;
@@ -9,7 +9,7 @@ import javax.inject.Inject;
 import javax.jms.Message;
 import javax.jms.MessageListener;
 
-@Requires({"pl.com.it_crowd.seam3.mailman.Mailman", "org.jboss.seam.jms.MessageManager", "org.jboss.seam.mail.api.MailMessage"})
+@Requires({"pl.itcrowd.seam3.mailman.Mailman", "org.jboss.seam.jms.MessageManager", "org.jboss.seam.mail.api.MailMessage"})
 public class JMSMailListener implements MessageListener {
 // ------------------------------ FIELDS ------------------------------
 
