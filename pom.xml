@@ -5,7 +5,7 @@
 
     <groupId>pl.itcrowd.seam3.mailman</groupId>
     <artifactId>seam3-mailman</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
 
     <dependencies>
 
