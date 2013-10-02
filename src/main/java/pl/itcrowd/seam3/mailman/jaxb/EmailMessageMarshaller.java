@@ -6,7 +6,6 @@ import org.jboss.jaxb.intros.IntroductionsConfigParser;
 import org.jboss.jaxb.intros.configmodel.JaxbIntros;
 import org.jboss.seam.mail.core.EmailMessage;
 
-import javax.enterprise.context.ApplicationScoped;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
@@ -15,7 +14,6 @@ import java.io.StringReader;
 import java.io.StringWriter;
 import java.util.Collections;
 
-@ApplicationScoped
 public class EmailMessageMarshaller {
 // ------------------------------ FIELDS ------------------------------
 
