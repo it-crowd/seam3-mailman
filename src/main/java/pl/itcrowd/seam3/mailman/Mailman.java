@@ -43,7 +43,7 @@ public class Mailman {
     {
         final String marshal;
         try {
-            marshal = new EmailMessageMarshaller().marshal(emailMessage);
+            marshal = emailMessageMarshaller.marshal(emailMessage);
         } catch (JAXBException e) {
             throw new RuntimeException(e);
         }
