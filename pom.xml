@@ -2,74 +2,89 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>pl.itcrowd.seam3.mailman</groupId>
     <artifactId>seam3-mailman</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
-
+    <version>1.0.1-SNAPSHOT</version>
     <dependencies>
-
-        <dependency>
-            <groupId>org.jboss.solder</groupId>
-            <artifactId>solder-api</artifactId>
-            <version>3.1.0.Final</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jboss.seam.jms</groupId>
-            <artifactId>seam-jms</artifactId>
-            <version>3.1.0.Final</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jboss.seam.mail</groupId>
-            <artifactId>seam-mail</artifactId>
-            <version>3.1.0.Final</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jboss.spec.javax.jms</groupId>
-            <artifactId>jboss-jms-api_1.1_spec</artifactId>
-            <version>1.0.0.Final</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jboss.spec.javax.ejb</groupId>
-            <artifactId>jboss-ejb-api_3.1_spec</artifactId>
-            <version>1.0.1.Final</version>
-            <scope>provided</scope>
-        </dependency>
-
         <dependency>
             <groupId>javax.enterprise</groupId>
             <artifactId>cdi-api</artifactId>
             <version>1.0</version>
             <scope>provided</scope>
         </dependency>
-
         <dependency>
             <groupId>javax.mail</groupId>
             <artifactId>mail</artifactId>
             <version>1.4.4</version>
             <scope>provided</scope>
         </dependency>
-
         <dependency>
             <groupId>jboss.jaxbintros</groupId>
             <artifactId>jboss-jaxb-intros</artifactId>
             <version>1.0.2.GA</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.jboss.seam.jms</groupId>
+            <artifactId>seam-jms</artifactId>
+            <version>3.1.0.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.seam.mail</groupId>
+            <artifactId>seam-mail</artifactId>
+            <version>3.1.0.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.solder</groupId>
+            <artifactId>solder-api</artifactId>
+            <version>3.1.0.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.spec.javax.ejb</groupId>
+            <artifactId>jboss-ejb-api_3.1_spec</artifactId>
+            <version>1.0.1.Final</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.spec.javax.jms</groupId>
+            <artifactId>jboss-jms-api_1.1_spec</artifactId>
+            <version>1.0.0.Final</version>
+            <scope>provided</scope>
+        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.8.2</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.4.1</version>
+                <configuration>
+                    <localCheckout>true</localCheckout>
+                    <pushChanges>false</pushChanges>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <scm>
+        <developerConnection>scm:git:https://github.com/it-crowd/seam3-mailman.git</developerConnection>
+    </scm>
+    <distributionManagement>
+        <repository>
+            <id>itcrowd.pl</id>
+            <name>IT Crowd Company Repository</name>
+            <url>http://artifactory.itcrowd.pl/libs-release-local</url>
+        </repository>
+        <snapshotRepository>
+            <id>itcrowd.pl</id>
+            <name>IT Crowd Internal Repository</name>
+            <url>http://artifactory.itcrowd.pl/libs-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
     <profiles>
         <profile>
             <id>release</id>
@@ -93,22 +108,4 @@
             </build>
         </profile>
     </profiles>
-
-    <distributionManagement>
-        <repository>
-            <id>it-crowd.com.pl</id>
-            <name>IT Crowd Internal Repository</name>
-            <url>http://artifactory.it-crowd.com.pl/libs-release-local</url>
-        </repository>
-        <snapshotRepository>
-            <id>it-crowd.com.pl</id>
-            <name>IT Crowd Internal Repository</name>
-            <url>http://artifactory.it-crowd.com.pl/libs-snapshot-local</url>
-        </snapshotRepository>
-    </distributionManagement>
-
-    <scm>
-        <developerConnection>scm:git:https://github.com/it-crowd/seam3-mailman.git</developerConnection>
-    </scm>
-
 </project>
